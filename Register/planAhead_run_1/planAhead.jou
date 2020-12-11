@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Dec 11 16:28:26 2020
+# Process ID: 7552
+# Log file: C:/Users/62010472/Desktop/buffer/Register/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/62010472/Desktop/buffer/Register/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/62010472/Desktop/buffer/Register/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P9 [get_ports {Bit[5]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {Bit[4]}]
+endgroup
+startgroup
+set_property package_pin P14 [get_ports {Bit[3]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {Bit[2]}]
+endgroup
+startgroup
+set_property package_pin P21 [get_ports {Bit[1]}]
+endgroup
+startgroup
+set_property package_pin P23 [get_ports {Bit[0]}]
+endgroup
+startgroup
+set_property package_pin P82 [get_ports L0_P82]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports L1_P81]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports L2_P80]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports L3_P79]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports L4_P78]
+endgroup
+startgroup
+set_property package_pin P75 [get_ports L5_P75]
+endgroup
+startgroup
+set_property package_pin P74 [get_ports L6_P74]
+endgroup
+startgroup
+set_property package_pin P67 [get_ports L7_P67]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports MN0_P95]
+endgroup
+startgroup
+set_property package_pin P94 [get_ports MN1_P94]
+endgroup
+startgroup
+set_property package_pin P93 [get_ports MN2_P93]
+endgroup
+startgroup
+set_property package_pin P92 [get_ports MN3_92]
+endgroup
+startgroup
+set_property package_pin P88 [get_ports MN4_P88]
+endgroup
+startgroup
+set_property package_pin P87 [get_ports MN5_P87]
+endgroup
+startgroup
+set_property package_pin P85 [get_ports MN6_P85]
+endgroup
+startgroup
+set_property package_pin P84 [get_ports MN7_P84]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports OSC_0]
+endgroup
+save_constraints

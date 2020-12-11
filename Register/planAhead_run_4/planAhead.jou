@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Dec 11 19:47:19 2020
+# Process ID: 18388
+# Log file: C:/Users/62010472/Desktop/buffer/Register/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/62010472/Desktop/buffer/Register/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/62010472/Desktop/buffer/Register/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P82 [get_ports L0_P82]
+endgroup
+save_constraints

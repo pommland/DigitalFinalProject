@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Dec 11 16:43:27 2020
+# Process ID: 4928
+# Log file: C:/Users/62010472/Desktop/buffer/Register/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/62010472/Desktop/buffer/Register/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/62010472/Desktop/buffer/Register/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
