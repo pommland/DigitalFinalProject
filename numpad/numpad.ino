@@ -1,23 +1,24 @@
 #include <Keypad.h>
 const byte ROWS = 4; //four rows
-const byte COLS = 4; //three columns
-int pinBit_[4] = {13, 12, 11, 10};
+const byte COLS = 3; //three columns
+#define Ana0 A0
+int pinBit_[6] = {13, 12, 11, 10, 2 , Ana0};
 
-String state_bit[4] = {"", "", "", ""};
-//String state_b2 = "";
-//String state_b1 = "";
-//String state_b0 = "";
+String state_bit[6] = {"", "", "", "", "",""};
+
 char keys[ROWS][COLS] = {
-  {'1', '2', '3', 'A'},
-  {'4', '5', '6', 'B'},
-  {'7', '8', '9', 'C'},
-  {'*', '0', '#', 'D'}
+  {'1', '2', '3'},
+  {'4', '5', '6'},
+  {'7', '8', '9'},
+  {'*', '0', '#'}
 };
 byte rowPins[ROWS] = {9, 8, 7, 6};
-byte colPins[COLS] = {5, 4, 3, 2};
+byte colPins[COLS] = {5, 4, 3};
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 void setup() {
   Serial.begin(9600);
+  pinMode(pinBit_[5], OUTPUT);
+  pinMode(pinBit_[4], OUTPUT);
   pinMode(pinBit_[3], OUTPUT);
   pinMode(pinBit_[2], OUTPUT);
   pinMode(pinBit_[1], OUTPUT);
@@ -30,63 +31,83 @@ void loop() {
     Serial.println(key);
     //    Serial.println(key);
     if (key == "0") {
-      key = "0000";
+      key = "000011";
       Serial.println(key);
     }
     else if (key == "1") {
-      key = "0001";
+      key = "000111";
       Serial.println(key);
     }
     else if (key == "2") {
-      key = "0010";
+      key = "001011";
       Serial.println(key);
     }
     else if (key == "3") {
-      key = "0011";
+      key = "001111";
       Serial.println(key);
     }
     else if (key == "4") {
-      key = "0100";
+      key = "010011";
       Serial.println(key);
     }
     else if (key == "5") {
-      key = "0101";
+      key = "010111";
       Serial.println(key);
     }
     else if (key == "6") {
-      key = "0110";
+      key = "011011";
       Serial.println(key);
     }
     else if (key == "7") {
-      key = "0111";
+      key = "011111";
       Serial.println(key);
     }
     else if (key == "8") {
-      key = "1000";
+      key = "100011";
       Serial.println(key);
     }
     else if (key == "9" ) {
-      key = "1001";
+      key = "100111";
       Serial.println(key);
     }
-    else if (key == "*"){
-      key = "1100";
+    else if (key == "*") {
+      key = "111100";
       Serial.println(key);
     }
-    else if (key == "#"){
-      key = "1111";
+    else if (key == "#") {
+      key = "111111";
       Serial.println(key);
     }
-    
-    for (int i = 0; i < key.length(); i++) {
-      
-      if (key[i] == '0') {
 
-        digitalWrite(pinBit_[i], LOW);
+    for (int i = 0; i < key.length(); i++) {
+
+      if (key[i] == '1') {
+        if (i == 4 ) {
+//          delay(200);
+          digitalWrite(pinBit_[i], HIGH);
+
+          delay(2);
+          digitalWrite(pinBit_[i], LOW);
+
+        }
+        else if (i == 5 ) {
+//          delay(200);
+          analogWrite(pinBit_[i], 1023);
+
+          delay(2);
+          analogWrite(pinBit_[i], 0);
+
+        }
+        else {
+          digitalWrite(pinBit_[i], HIGH);
+        }
+
+
       }
       else {
-        digitalWrite(pinBit_[i], HIGH);
+        digitalWrite(pinBit_[i], LOW);
       }
+
 
     }
 
