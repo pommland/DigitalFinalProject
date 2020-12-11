@@ -1,0 +1,317 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'Demux5_20'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o Demux5_20_map.ncd Demux5_20.ngd Demux5_20.pcf 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Fri Dec 11 19:52:57 2020
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    3
+Slice Logic Utilization:
+  Number of Slice Registers:                     0 out of  11,440    0%
+  Number of Slice LUTs:                          0 out of   5,720    0%
+
+Slice Logic Distribution:
+  Number of occupied Slices:                     0 out of   1,430    0%
+  Number of MUXCYs used:                         0 out of   2,860    0%
+  Number of LUT Flip Flop pairs used:            0
+
+IO Utilization:
+  Number of bonded IOBs:                        20 out of     102   19%
+    Number of LOCed IOBs:                       20 out of      20  100%
+    IOB Flip Flops:                              4
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   4 out of     200    2%
+    Number used as OLOGIC2s:                     4
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      16    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                1.00
+
+Peak Memory Usage:  4487 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   4 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal MN0_P95 connected to top level port MN0_P95 has been
+   removed.
+WARNING:MapLib:701 - Signal Bit<5> connected to top level port Bit<5> has been
+   removed.
+WARNING:MapLib:701 - Signal Bit<4> connected to top level port Bit<4> has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network XLXN_91 has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  21 block(s) removed
+  25 block(s) optimized away
+  33 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_53" (FF) removed.
+ The signal "XLXN_137" is loadless and has been removed.
+ The signal "XLXN_141" is loadless and has been removed.
+  Loadless block "XLXI_81/Mmux_D311" (ROM) removed.
+   The signal "XLXN_92" is loadless and has been removed.
+   The signal "XLXN_93" is loadless and has been removed.
+ The signal "D3<0>" is loadless and has been removed.
+  Loadless block "XLXI_4/Mmux_D311" (ROM) removed.
+   The signal "XLXN_87" is loadless and has been removed.
+   The signal "XLXN_86" is loadless and has been removed.
+The signal "XLXI_80/Q1_GND_3_o_add_0_OUT<0>" is sourceless and has been removed.
+The signal "XLXI_80/Q1_GND_3_o_add_0_OUT<1>" is sourceless and has been removed.
+The signal "XLXI_21/Q1_GND_3_o_add_0_OUT<0>" is sourceless and has been removed.
+The signal "XLXI_21/Q1_GND_3_o_add_0_OUT<1>" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "Bit_4_IBUF" is unused and has been removed.
+ Unused block "Bit_4_IBUF" (BUF) removed.
+  The signal "Bit<4>" is unused and has been removed.
+   Unused block "Bit<4>" (PAD) removed.
+The signal "Bit_5_IBUF" is unused and has been removed.
+ Unused block "Bit_5_IBUF" (BUF) removed.
+  The signal "Bit<5>" is unused and has been removed.
+   Unused block "Bit<5>" (PAD) removed.
+The signal "D1<3>" is unused and has been removed.
+The signal "D2<3>" is unused and has been removed.
+The signal "D3<3>" is unused and has been removed.
+ Unused block "XLXI_1/Mmux_D311" (ROM) removed.
+The signal "D1<2>" is unused and has been removed.
+The signal "D2<2>" is unused and has been removed.
+The signal "D3<2>" is unused and has been removed.
+ Unused block "XLXI_2/Mmux_D311" (ROM) removed.
+The signal "D1<1>" is unused and has been removed.
+The signal "D2<1>" is unused and has been removed.
+The signal "D3<1>" is unused and has been removed.
+ Unused block "XLXI_3/Mmux_D311" (ROM) removed.
+The signal "D1<0>" is unused and has been removed.
+ Unused block "XLXI_4/Mmux_D111" (ROM) removed.
+The signal "D2<0>" is unused and has been removed.
+The signal "XLXN_166" is unused and has been removed.
+The signal "MN0_P95_OBUF" is unused and has been removed.
+ Unused block "XLXI_33" (FF) removed.
+  The signal "XLXN_143" is unused and has been removed.
+   Unused block "XLXI_81/Mmux_D111" (ROM) removed.
+The signal "XLXN_149" is unused and has been removed.
+The signal "XLXN_150" is unused and has been removed.
+ Unused block "XLXI_81/Mmux_D211" (ROM) removed.
+The signal "XLXN_91" is unused and has been removed.
+ Unused block "XLXI_82" (ONE) removed.
+The signal "MN0_P95" is unused and has been removed.
+ Unused block "MN0_P95_OBUF" (BUF) removed.
+Unused block "MN0_P95" (PAD) removed.
+Unused block "XLXI_21/Madd_Q1_GND_3_o_add_0_OUT_xor<0>11_INV_0" (BUF) removed.
+Unused block "XLXI_21/Madd_Q1_GND_3_o_add_0_OUT_xor<1>11" (ROM) removed.
+Unused block "XLXI_80/Madd_Q1_GND_3_o_add_0_OUT_xor<0>11_INV_0" (BUF) removed.
+Unused block "XLXI_80/Madd_Q1_GND_3_o_add_0_OUT_xor<1>11" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+FDE 		XLXI_50
+   optimized to 0
+FDE 		XLXI_51
+   optimized to 0
+FDE 		XLXI_52
+   optimized to 0
+GND 		XLXI_96
+LUT3 		XLXI_1/Mmux_D111
+   optimized to 0
+LUT3 		XLXI_1/Mmux_D211
+   optimized to 0
+LUT3 		XLXI_2/Mmux_D111
+   optimized to 0
+LUT3 		XLXI_2/Mmux_D211
+   optimized to 0
+FDCE 		XLXI_21/Q0
+   optimized to 0
+FDCE 		XLXI_21/Q1
+   optimized to 0
+LUT3 		XLXI_3/Mmux_D111
+   optimized to 0
+LUT3 		XLXI_3/Mmux_D211
+   optimized to 0
+FDE 		XLXI_30
+   optimized to 0
+FDE 		XLXI_31
+   optimized to 0
+FDE 		XLXI_32
+   optimized to 0
+LUT3 		XLXI_4/Mmux_D211
+   optimized to 0
+FDE 		XLXI_46
+   optimized to 0
+FDE 		XLXI_47
+   optimized to 0
+FDE 		XLXI_48
+   optimized to 0
+FDE 		XLXI_49
+   optimized to 0
+FDCE 		XLXI_80/Q0
+   optimized to 0
+FDCE 		XLXI_80/Q1
+   optimized to 0
+LUT2 		XLXI_81/Mmux_D011
+   optimized to 1
+AND2 		XLXI_91
+AND2 		XLXI_93
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Bit<0>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| Bit<1>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| Bit<2>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| Bit<3>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| L0_P82                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| L1_P81                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| L2_P80                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| L3_P79                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| L4_P78                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| L5_P75                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| L6_P74                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| L7_P67                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| MN1_P94                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| MN2_P93                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| MN3_92                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| MN4_P88                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| MN5_P87                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| MN6_P85                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| MN7_P84                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| OSC_0                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

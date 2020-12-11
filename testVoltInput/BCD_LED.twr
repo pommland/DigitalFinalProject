@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml BCD_LED.twx BCD_LED.ncd -o BCD_LED.twr BCD_LED.pcf -ucf
+BCD_LED.ucf
+
+Design file:              BCD_LED.ncd
+Physical constraint file: BCD_LED.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Bit0_P23       |a_P41          |    7.999|
+Bit0_P23       |b_P40          |    8.030|
+Bit0_P23       |c_P35          |    7.733|
+Bit0_P23       |d_P34          |    7.584|
+Bit0_P23       |e_P32          |    7.560|
+Bit0_P23       |f_P29          |    7.143|
+Bit0_P23       |g_P27          |    6.751|
+Bit1_P21       |a_P41          |    8.213|
+Bit1_P21       |b_P40          |    8.114|
+Bit1_P21       |c_P35          |    7.822|
+Bit1_P21       |d_P34          |    7.849|
+Bit1_P21       |e_P32          |    7.884|
+Bit1_P21       |f_P29          |    6.865|
+Bit1_P21       |g_P27          |    6.882|
+Bit2_P16       |a_P41          |    8.624|
+Bit2_P16       |b_P40          |    8.860|
+Bit2_P16       |c_P35          |    8.512|
+Bit2_P16       |d_P34          |    8.624|
+Bit2_P16       |e_P32          |    8.334|
+Bit2_P16       |f_P29          |    7.440|
+Bit2_P16       |g_P27          |    7.525|
+Bit3_P14       |a_P41          |    8.763|
+Bit3_P14       |b_P40          |    8.659|
+Bit3_P14       |c_P35          |    8.653|
+Bit3_P14       |d_P34          |    8.329|
+Bit3_P14       |e_P32          |    8.126|
+Bit3_P14       |f_P29          |    7.469|
+Bit3_P14       |g_P27          |    7.140|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 10 16:24:23 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4549 MB
+
+
+

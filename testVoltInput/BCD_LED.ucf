@@ -1,0 +1,20 @@
+
+
+NET "Bit0_P23" LOC = P23;
+NET "Bit1_P21" LOC = P21;
+NET "Bit2_P16" LOC = P16;
+NET "Bit3_P14" LOC = P14;
+
+# PlanAhead Generated physical constraints 
+
+NET "a_P41" LOC = P41;
+NET "b_P40" LOC = P40;
+NET "C0_P44" LOC = P44;
+NET "C1_P43" LOC = P43;
+NET "C2_P33" LOC = P33;
+NET "C3_P30" LOC = P30;
+NET "c_P35" LOC = P35;
+NET "d_P34" LOC = P34;
+NET "e_P32" LOC = P32;
+NET "f_P29" LOC = P29;
+NET "g_P27" LOC = P27;

@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.xst" -ofn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.syr" 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.xst" -ofn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_LED.ucf -p xc6slx9-tqg144-3 BCD_LED.ngc BCD_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_LED_map.ncd BCD_LED.ngd BCD_LED.pcf 
+par -w -intstyle ise -ol high -mt off BCD_LED_map.ncd BCD_LED.ncd BCD_LED.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_LED.twx BCD_LED.ncd -o BCD_LED.twr BCD_LED.pcf -ucf BCD_LED.ucf 
+bitgen -intstyle ise -f BCD_LED.ut BCD_LED.ncd 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.xst" -ofn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.syr" 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.xst" -ofn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_LED.ucf -p xc6slx9-tqg144-3 BCD_LED.ngc BCD_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_LED_map.ncd BCD_LED.ngd BCD_LED.pcf 
+par -w -intstyle ise -ol high -mt off BCD_LED_map.ncd BCD_LED.ncd BCD_LED.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_LED.twx BCD_LED.ncd -o BCD_LED.twr BCD_LED.pcf -ucf BCD_LED.ucf 
+bitgen -intstyle ise -f BCD_LED.ut BCD_LED.ncd 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.xst" -ofn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BCD_LED.ucf -p xc6slx9-tqg144-3 BCD_LED.ngc BCD_LED.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BCD_LED_map.ncd BCD_LED.ngd BCD_LED.pcf 
+par -w -intstyle ise -ol high -mt off BCD_LED_map.ncd BCD_LED.ncd BCD_LED.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BCD_LED.twx BCD_LED.ncd -o BCD_LED.twr BCD_LED.pcf -ucf BCD_LED.ucf 
+bitgen -intstyle ise -f BCD_LED.ut BCD_LED.ncd 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.xst" -ofn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.syr" 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.xst" -ofn "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.syr" 

@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Dec 10 16:14:00 2020
+# Process ID: 6504
+# Log file: C:/Users/62010472/Desktop/buffer/testVoltInput/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/62010472/Desktop/buffer/testVoltInput/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/62010472/Desktop/buffer/testVoltInput/pa.fromHdl.tcl
+# create_project -name testVoltInput -dir "C:/Users/62010472/Desktop/buffer/testVoltInput/planAhead_run_2" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "BCD_LED.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {counter0_9.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BCD_LED.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top BCD_LED $srcset
+# add_files [list {BCD_LED.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/62010472/Desktop/buffer/testVoltInput/counter0_9.vf" into library work
+Analyzing Verilog file "C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.vf" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'LED0_P82' [C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.ucf:8]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'LED1_P81' [C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.ucf:9]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'LED2_P80' [C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.ucf:10]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'LED3_P79' [C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.ucf:11]
+Finished Parsing UCF File [C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 72b24fc2
+open_rtl_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 639.660 ; gain = 180.773
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P41 [get_ports a_P41]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b_P40]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports C0_P44]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports C1_P43]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports C2_P33]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports C3_P30]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports c_P35]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d_P34]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e_P32]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e_P32]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f_P29]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g_P27]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/62010472/Desktop/buffer/testVoltInput\planAhead_pid6504.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Dec 10 16:15:29 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead

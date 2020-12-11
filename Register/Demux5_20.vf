@@ -1,0 +1,298 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Demux5_20.vf
+// /___/   /\     Timestamp : 12/11/2020 19:45:26
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/62010472/Desktop/buffer/Register/Demux5_20.vf -w C:/Users/62010472/Desktop/buffer/Register/Demux5_20.sch
+//Design Name: Demux5_20
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D2_4E_HXILINX_Demux5_20 (D0, D1, D2, D3, A0, A1, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+
+   input  A0;
+   input  A1;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+
+      always @ (A0 or A1 or E)
+      begin
+         if(!E)
+           {D3, D2, D1, D0} <= 4'b0000;
+        else
+        begin
+           case({A1,A0})
+             2'b00 : {D3,D2,D1,D0} <= 4'b0001;
+             2'b01 : {D3,D2,D1,D0} <= 4'b0010;
+             2'b10 : {D3,D2,D1,D0} <= 4'b0100;
+             2'b11 : {D3,D2,D1,D0} <= 4'b1000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale 100 ps / 10 ps
+
+module CB2CE_HXILINX_Demux5_20(CEO, Q0, Q1, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 2'b11;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q1, Q0} <= 2'b00;
+	else if (CE)
+	  {Q1,Q0} <= {Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q1,Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Demux5_20(Bit, 
+                 OSC_0, 
+                 L0_P82, 
+                 L1_P81, 
+                 L2_P80, 
+                 L3_P79, 
+                 L4_P78, 
+                 L5_P75, 
+                 L6_P74, 
+                 L7_P67, 
+                 MN0_P95, 
+                 MN1_P94, 
+                 MN2_P93, 
+                 MN3_92, 
+                 MN4_P88, 
+                 MN5_P87, 
+                 MN6_P85, 
+                 MN7_P84);
+
+    input [5:0] Bit;
+    input OSC_0;
+   output L0_P82;
+   output L1_P81;
+   output L2_P80;
+   output L3_P79;
+   output L4_P78;
+   output L5_P75;
+   output L6_P74;
+   output L7_P67;
+   output MN0_P95;
+   output MN1_P94;
+   output MN2_P93;
+   output MN3_92;
+   output MN4_P88;
+   output MN5_P87;
+   output MN6_P85;
+   output MN7_P84;
+   
+   wire [3:0] D0;
+   wire [3:0] D1;
+   wire [3:0] D2;
+   wire [3:0] D3;
+   wire XLXN_86;
+   wire XLXN_87;
+   wire XLXN_91;
+   wire XLXN_92;
+   wire XLXN_93;
+   wire XLXN_134;
+   wire XLXN_135;
+   wire XLXN_136;
+   wire XLXN_137;
+   wire XLXN_141;
+   wire XLXN_143;
+   wire XLXN_149;
+   wire XLXN_150;
+   wire XLXN_166;
+   wire XLXN_167;
+   wire XLXN_169;
+   wire XLXN_171;
+   wire L0_P82_DUMMY;
+   
+   assign L0_P82 = L0_P82_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   D2_4E_HXILINX_Demux5_20  XLXI_1 (.A0(XLXN_86), 
+                                   .A1(XLXN_87), 
+                                   .E(Bit[3]), 
+                                   .D0(D0[3]), 
+                                   .D1(D1[3]), 
+                                   .D2(D2[3]), 
+                                   .D3(D3[3]));
+   (* HU_SET = "XLXI_2_1" *) 
+   D2_4E_HXILINX_Demux5_20  XLXI_2 (.A0(XLXN_86), 
+                                   .A1(XLXN_87), 
+                                   .E(Bit[2]), 
+                                   .D0(D0[2]), 
+                                   .D1(D1[2]), 
+                                   .D2(D2[2]), 
+                                   .D3(D3[2]));
+   (* HU_SET = "XLXI_3_2" *) 
+   D2_4E_HXILINX_Demux5_20  XLXI_3 (.A0(XLXN_86), 
+                                   .A1(XLXN_87), 
+                                   .E(Bit[1]), 
+                                   .D0(D0[1]), 
+                                   .D1(D1[1]), 
+                                   .D2(D2[1]), 
+                                   .D3(D3[1]));
+   (* HU_SET = "XLXI_4_3" *) 
+   D2_4E_HXILINX_Demux5_20  XLXI_4 (.A0(XLXN_86), 
+                                   .A1(XLXN_87), 
+                                   .E(Bit[0]), 
+                                   .D0(D0[0]), 
+                                   .D1(D1[0]), 
+                                   .D2(D2[0]), 
+                                   .D3(D3[0]));
+   (* HU_SET = "XLXI_21_4" *) 
+   CB2CE_HXILINX_Demux5_20  XLXI_21 (.C(XLXN_166), 
+                                    .CE(Bit[4]), 
+                                    .CLR(), 
+                                    .CEO(), 
+                                    .Q0(XLXN_86), 
+                                    .Q1(XLXN_87), 
+                                    .TC());
+   FDCE  XLXI_22 (.C(OSC_0), 
+                 .CE(XLXN_149), 
+                 .CLR(), 
+                 .D(D0[3]), 
+                 .Q(MN7_P84));
+   FDCE  XLXI_23 (.C(OSC_0), 
+                 .CE(XLXN_149), 
+                 .CLR(), 
+                 .D(D0[2]), 
+                 .Q(MN6_P85));
+   FDCE  XLXI_24 (.C(OSC_0), 
+                 .CE(XLXN_149), 
+                 .CLR(), 
+                 .D(D0[1]), 
+                 .Q(MN5_P87));
+   FDCE  XLXI_25 (.C(OSC_0), 
+                 .CE(XLXN_149), 
+                 .CLR(), 
+                 .D(D0[0]), 
+                 .Q(MN4_P88));
+   FDCE  XLXI_30 (.C(OSC_0), 
+                 .CE(XLXN_143), 
+                 .CLR(), 
+                 .D(D1[3]), 
+                 .Q(MN3_92));
+   FDCE  XLXI_31 (.C(OSC_0), 
+                 .CE(XLXN_143), 
+                 .CLR(), 
+                 .D(D1[2]), 
+                 .Q(MN2_P93));
+   FDCE  XLXI_32 (.C(OSC_0), 
+                 .CE(XLXN_143), 
+                 .CLR(), 
+                 .D(D1[1]), 
+                 .Q(MN1_P94));
+   FDCE  XLXI_33 (.C(), 
+                 .CE(XLXN_143), 
+                 .CLR(), 
+                 .D(D1[0]), 
+                 .Q(MN0_P95));
+   FDCE  XLXI_46 (.C(OSC_0), 
+                 .CE(XLXN_150), 
+                 .CLR(), 
+                 .D(D2[3]), 
+                 .Q(L7_P67));
+   FDCE  XLXI_47 (.C(OSC_0), 
+                 .CE(XLXN_150), 
+                 .CLR(), 
+                 .D(D2[2]), 
+                 .Q(L6_P74));
+   FDCE  XLXI_48 (.C(OSC_0), 
+                 .CE(XLXN_150), 
+                 .CLR(), 
+                 .D(D2[1]), 
+                 .Q(L5_P75));
+   FDCE  XLXI_49 (.C(OSC_0), 
+                 .CE(XLXN_150), 
+                 .CLR(), 
+                 .D(D2[0]), 
+                 .Q(L4_P78));
+   FDCE  XLXI_50 (.C(XLXN_134), 
+                 .CE(XLXN_141), 
+                 .CLR(), 
+                 .D(D3[3]), 
+                 .Q(L3_P79));
+   FDCE  XLXI_51 (.C(XLXN_135), 
+                 .CE(XLXN_141), 
+                 .CLR(), 
+                 .D(D3[2]), 
+                 .Q(L2_P80));
+   FDCE  XLXI_52 (.C(XLXN_136), 
+                 .CE(XLXN_141), 
+                 .CLR(), 
+                 .D(D3[1]), 
+                 .Q(L1_P81));
+   FDCE  XLXI_53 (.C(XLXN_137), 
+                 .CE(XLXN_141), 
+                 .CLR(), 
+                 .D(D3[0]), 
+                 .Q(XLXN_171));
+   (* HU_SET = "XLXI_80_5" *) 
+   CB2CE_HXILINX_Demux5_20  XLXI_80 (.C(L0_P82_DUMMY), 
+                                    .CE(Bit[5]), 
+                                    .CLR(), 
+                                    .CEO(), 
+                                    .Q0(XLXN_93), 
+                                    .Q1(XLXN_92), 
+                                    .TC());
+   (* HU_SET = "XLXI_81_6" *) 
+   D2_4E_HXILINX_Demux5_20  XLXI_81 (.A0(XLXN_93), 
+                                    .A1(XLXN_92), 
+                                    .E(XLXN_91), 
+                                    .D0(XLXN_149), 
+                                    .D1(XLXN_143), 
+                                    .D2(XLXN_150), 
+                                    .D3(XLXN_141));
+   VCC  XLXI_82 (.P(XLXN_91));
+   AND2  XLXI_91 (.I0(XLXN_167), 
+                 .I1(Bit[4]), 
+                 .O(XLXN_166));
+   INV  XLXI_92 (.I(Bit[4]), 
+                .O(XLXN_167));
+   AND2  XLXI_93 (.I0(XLXN_169), 
+                 .I1(Bit[5]), 
+                 .O(L0_P82_DUMMY));
+   INV  XLXI_94 (.I(Bit[5]), 
+                .O(XLXN_169));
+   GND  XLXI_96 (.G(XLXN_171));
+endmodule

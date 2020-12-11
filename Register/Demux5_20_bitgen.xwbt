@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\62010472\Desktop\buffer\Register\Demux5_20.ncd
+OUTFILE=C:\Users\62010472\Desktop\buffer\Register\Demux5_20.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\62010472\Desktop\buffer\Register
+LICENSE=WebPack
+USER_INFO=__0_0_0

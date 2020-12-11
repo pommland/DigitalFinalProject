@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Dec 10 16:14:00 2020
+# Process ID: 6504
+# Log file: C:/Users/62010472/Desktop/buffer/testVoltInput/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/62010472/Desktop/buffer/testVoltInput/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/62010472/Desktop/buffer/testVoltInput/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P41 [get_ports a_P41]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b_P40]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports C0_P44]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports C1_P43]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports C2_P33]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports C3_P30]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports c_P35]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d_P34]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e_P32]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e_P32]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f_P29]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g_P27]
+endgroup
+save_constraints

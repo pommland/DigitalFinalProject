@@ -1,0 +1,83 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : BCD_LED.vf
+// /___/   /\     Timestamp : 12/10/2020 17:48:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.vf -w C:/Users/62010472/Desktop/buffer/testVoltInput/BCD_LED.sch
+//Design Name: BCD_LED
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module BCD_LED(Bit0_P23, 
+               Bit1_P21, 
+               Bit2_P16, 
+               Bit3_P14, 
+               a_P41, 
+               b_P40, 
+               c_P35, 
+               C0_P44, 
+               C1_P43, 
+               C2_P33, 
+               C3_P30, 
+               d_P34, 
+               e_P32, 
+               f_P29, 
+               g_P27);
+
+    input Bit0_P23;
+    input Bit1_P21;
+    input Bit2_P16;
+    input Bit3_P14;
+   output a_P41;
+   output b_P40;
+   output c_P35;
+   output C0_P44;
+   output C1_P43;
+   output C2_P33;
+   output C3_P30;
+   output d_P34;
+   output e_P32;
+   output f_P29;
+   output g_P27;
+   
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   
+   counter0_9  XLXI_1 (.IN_0(Bit0_P23), 
+                      .IN_1(Bit1_P21), 
+                      .IN_2(Bit2_P16), 
+                      .IN_3(Bit3_P14), 
+                      .SLC0(XLXN_20), 
+                      .SLC1(XLXN_21), 
+                      .SLC2(XLXN_22), 
+                      .SLC3(XLXN_23), 
+                      .a(a_P41), 
+                      .b(b_P40), 
+                      .c(c_P35), 
+                      .C0_P44(C0_P44), 
+                      .C1_P43(C1_P43), 
+                      .C2_P33(C2_P33), 
+                      .C3_P30(C3_P30), 
+                      .d(d_P34), 
+                      .e(e_P32), 
+                      .f(f_P29), 
+                      .g(g_P27));
+   VCC  XLXI_2 (.P(XLXN_20));
+   VCC  XLXI_4 (.P(XLXN_22));
+   GND  XLXI_5 (.G(XLXN_23));
+   GND  XLXI_6 (.G(XLXN_21));
+endmodule

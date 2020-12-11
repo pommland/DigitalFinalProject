@@ -1,0 +1,46 @@
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Demux5_20.ucf -p xc6slx9-tqg144-3 Demux5_20.ngc Demux5_20.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Demux5_20_map.ncd Demux5_20.ngd Demux5_20.pcf 
+par -w -intstyle ise -ol high -mt off Demux5_20_map.ncd Demux5_20.ncd Demux5_20.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Demux5_20.twx Demux5_20.ncd -o Demux5_20.twr Demux5_20.pcf -ucf Demux5_20.ucf 
+bitgen -intstyle ise -f Demux5_20.ut Demux5_20.ncd 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Demux5_20.ucf -p xc6slx9-tqg144-3 Demux5_20.ngc Demux5_20.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Demux5_20_map.ncd Demux5_20.ngd Demux5_20.pcf 
+par -w -intstyle ise -ol high -mt off Demux5_20_map.ncd Demux5_20.ncd Demux5_20.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Demux5_20.twx Demux5_20.ncd -o Demux5_20.twr Demux5_20.pcf -ucf Demux5_20.ucf 
+bitgen -intstyle ise -f Demux5_20.ut Demux5_20.ncd 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Demux5_20.ucf -p xc6slx9-tqg144-3 Demux5_20.ngc Demux5_20.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Demux5_20_map.ncd Demux5_20.ngd Demux5_20.pcf 
+par -w -intstyle ise -ol high -mt off Demux5_20_map.ncd Demux5_20.ncd Demux5_20.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Demux5_20.twx Demux5_20.ncd -o Demux5_20.twr Demux5_20.pcf -ucf Demux5_20.ucf 
+bitgen -intstyle ise -f Demux5_20.ut Demux5_20.ncd 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Demux5_20.ucf -p xc6slx9-tqg144-3 Demux5_20.ngc Demux5_20.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Demux5_20_map.ncd Demux5_20.ngd Demux5_20.pcf 
+par -w -intstyle ise -ol high -mt off Demux5_20_map.ncd Demux5_20.ncd Demux5_20.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Demux5_20.twx Demux5_20.ncd -o Demux5_20.twr Demux5_20.pcf -ucf Demux5_20.ucf 
+bitgen -intstyle ise -f Demux5_20.ut Demux5_20.ncd 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Demux5_20.ucf -p xc6slx9-tqg144-3 Demux5_20.ngc Demux5_20.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Demux5_20_map.ncd Demux5_20.ngd Demux5_20.pcf 
+par -w -intstyle ise -ol high -mt off Demux5_20_map.ncd Demux5_20.ncd Demux5_20.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Demux5_20.twx Demux5_20.ncd -o Demux5_20.twr Demux5_20.pcf -ucf Demux5_20.ucf 
+bitgen -intstyle ise -f Demux5_20.ut Demux5_20.ncd 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Demux5_20.ucf -p xc6slx9-tqg144-3 Demux5_20.ngc Demux5_20.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Demux5_20_map.ncd Demux5_20.ngd Demux5_20.pcf 
+par -w -intstyle ise -ol high -mt off Demux5_20_map.ncd Demux5_20.ncd Demux5_20.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Demux5_20.twx Demux5_20.ncd -o Demux5_20.twr Demux5_20.pcf -ucf Demux5_20.ucf 
+bitgen -intstyle ise -f Demux5_20.ut Demux5_20.ncd 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+xst -intstyle ise -ifn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.xst" -ofn "C:/Users/62010472/Desktop/buffer/Register/Demux5_20.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Demux5_20.ucf -p xc6slx9-tqg144-3 Demux5_20.ngc Demux5_20.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Demux5_20_map.ncd Demux5_20.ngd Demux5_20.pcf 
+par -w -intstyle ise -ol high -mt off Demux5_20_map.ncd Demux5_20.ncd Demux5_20.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Demux5_20.twx Demux5_20.ncd -o Demux5_20.twr Demux5_20.pcf -ucf Demux5_20.ucf 
+bitgen -intstyle ise -f Demux5_20.ut Demux5_20.ncd 
